@@ -51,7 +51,7 @@ class FlickrPhotos extends Component {
                       tags={photo.tags}/>
         });
       } else {
-        flkrPhotos = <p className={classes.Text}>Sorry, there is no matching photos. Please try again.</p>
+        flkrPhotos = <p className={classes.Text}>Sorry, there are no matching photos. Please try again.</p>
       }
     } else if (this.props.searchString.length > 0 && this.state.loadedSearchResult === null) {
       flkrPhotos = <p className={classes.Text}>Loading images!</p>
