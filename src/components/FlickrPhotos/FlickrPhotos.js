@@ -19,7 +19,7 @@ class FlickrPhotos extends Component {
       if (!this.state.loadedSearchResult || 
         (this.state.loadedSearchResult && this.state.propSearchString !== this.props.searchString)) {
         const propLocalSearchString = this.props.searchString;
-          axios.get('https://cors-anywhere.herokuapp.com/https://www.flickr.com/services/feeds/photos_public.gne?tags=' + this.props.searchString.replace(' ',',') + '&format=json&nojsoncallback=1')
+          axios.get('https://cors-anywhere.herokuapp.com/https://www.flickr.com/services/feeds/photos_public.gne?tags=' + this.props.searchString.split(' ').join(',') + '&format=json&nojsoncallback=1')
               .then(response => {
                   this.setState({loadedSearchResult: response.data.items, propSearchString:propLocalSearchString});
               });
