@@ -1,0 +1,46 @@
+.UserInput {
+  background: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+
+.SearchBar {
+  position: relative;
+  width: 40%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .SearchBar {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+  }
+}
+
+.SearchInput {
+  line-height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  padding: 0 0 0 60px;
+  width: 100%;
+  box-sizing:border-box;
+}
+
+.SearchInput:active,
+.SearchInput:hover,
+.SearchInput:focus {
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  outline: none;
+}
+
+.SearchIcon {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  color: #bbb;
+  font-size: 30px;
+  font-weight: 400;
+}

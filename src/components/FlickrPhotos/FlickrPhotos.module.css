@@ -1,0 +1,11 @@
+.FlickrPhotos {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.Text {
+  text-align: center;
+  width: 100%;
+  color: #797979;
+}
