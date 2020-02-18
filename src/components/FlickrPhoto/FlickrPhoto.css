@@ -30,7 +30,6 @@
   max-width: 100%;
   word-wrap: break-word;
   border-radius: 5px;
-  margin-bottom: 10px;
   animation: fadein 1s;
 }
 
@@ -50,6 +49,17 @@
   background-color: #00dcbb;
   box-shadow: 0 2px 12px 4px rgba(30,36,50,0.05);
   text-decoration: none;
+}
+
+.FlickrPhoto .imgBlock a {
+  background: transparent;
+  padding: 10px;
+}
+
+.FlickrPhoto .imgBlock a:hover,
+.FlickrPhoto .imgBlock a:active,
+.FlickrPhoto .imgBlock a:focus {
+  background: #00CDAE;
 }
 
 .FlickrPhoto p.Tags, 

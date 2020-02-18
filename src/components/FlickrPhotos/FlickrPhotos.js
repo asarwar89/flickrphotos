@@ -40,6 +40,8 @@ class FlickrPhotos extends Component {
     //No Results puts update search string message
     if (this.state.loadedSearchResult) {
       if (this.state.loadedSearchResult.length > 0) {
+
+        //creating array of FlickrPhoto component for each photos in api
         flkrPhotos = this.state.loadedSearchResult.map( photo => {
           return <FlickrPhoto
                       key={photo.link} 
@@ -51,9 +53,12 @@ class FlickrPhotos extends Component {
                       tags={photo.tags}/>
         });
       } else {
+        //if loadedSearchResult is not null and length is 0
+        //means no matching result for current search
         flkrPhotos = <p className={classes.Text}>Sorry, there are no matching photos. Please try again.</p>
       }
     } else if (this.props.searchString.length > 0 && this.state.loadedSearchResult === null) {
+      //searchString is not null but loadedSearchResult is null, means still loading
       flkrPhotos = <p className={classes.Text}>Loading images!</p>
     } 
 

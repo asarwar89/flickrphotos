@@ -16,9 +16,6 @@ class App extends Component {
   }
 
   render(){
-
-
-
     return (
       <div className="App">
         <UserInput changed={this.switchSearchString} searchString={this.state.searchString} />
